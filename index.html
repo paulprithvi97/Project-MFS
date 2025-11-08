@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/all.min.css" />
+  </head>
+  <body>
+    <div class="max-w-[1320px] m-auto text-center">
+      <!-- Mobile Device -->
+     
+      <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+        
+        <div
+          class="mockup-phone-display text-white grid place-content-center bg-neutral-900"
+        >
+          <div class="text text-4xl text-pink-600">
+            Pkash
+            <i
+              class="fa-solid fa-money-check-dollar fa-beat-fade"
+              style="color: #e63b7a"
+            ></i>
+          </div>
+ <div class="toast toast-center" hidden id="errorMsg">
+        <div class="alert bg-red-600">
+          <span>Login Credential doesnt matches.</span>
+        </div>
+      </div>
+      <div class="toast toast-center" hidden id="successMsg">
+        <div class="alert bg-green-600">
+          <span>Login Success!</span>
+        </div>
+      </div>
+          <div class="w-[400px] bg-base-100 p-3 rounded-2xl mt-5">
+            <div class="card bg-base-300 shadow-3xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Number</label>
+                  <input
+                    type="text"
+                    class="input outline-0"
+                    placeholder="Number"
+                    id="number"
+                  />
+                  <label class="label">Pin Number</label>
+                  <input
+                    type="password"
+                    class="input outline-0"
+                    placeholder="4-Digit Pin"
+                    id="pinNumber"
+                  />
+                  <button class="btn btn-neutral mt-4" id="loginBtn">
+                    Login
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
